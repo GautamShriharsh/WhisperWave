@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import AuthImagePattern from "../components/AuthImagePattern";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ const LoginPage = () => {
     password: "", 
   });
 
-  const { login, isLogginIn } = useAuthStore();
+  const { login, isLoggingIn } = useAuthStore();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
