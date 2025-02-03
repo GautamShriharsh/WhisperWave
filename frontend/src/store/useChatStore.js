@@ -23,12 +23,14 @@ export const useChatStore = create((set,get) => ({
     },
 
     getMessages: async (userId) => {
+        if (!userId) return; // ✅ Prevent API call if userId is missing        
         set({isMessagesLoading: true});
         try {
-            const res = axiosInstance.get(`/messages/${userId}`);
-            set({messages: res.data});
+            const res = await axiosInstance.get(`/messages/${userId}`);
+            set({ messages: res.data || [] }); // ✅ Ensure messages is always an array
         } catch (error) {
             toast.error(error.response.data.message);
+            set({ messages: [] }); // ✅ Prevent undefined state
         } finally {
             set({isMessagesLoading: false});
         }
