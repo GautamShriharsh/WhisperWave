@@ -1,0 +1,74 @@
+┣ 📂backend
+┃ ┣ 📂src
+┃ ┃ ┣ 📂controllers
+┃ ┃ ┃ ┣ 📜auth.controller.js
+┃ ┃ ┃ ┗ 📜message.controller.js
+┃ ┃ ┣ 📂lib
+┃ ┃ ┃ ┣ 📜cloudinary.js
+┃ ┃ ┃ ┣ 📜db.js
+┃ ┃ ┃ ┣ 📜socket.js
+┃ ┃ ┃ ┗ 📜utils.js
+┃ ┃ ┣ 📂middleware
+┃ ┃ ┃ ┗ 📜auth.middleware.js
+┃ ┃ ┣ 📂models
+┃ ┃ ┃ ┣ 📜message.model.js
+┃ ┃ ┃ ┗ 📜user.model.js
+┃ ┃ ┣ 📂routes
+┃ ┃ ┃ ┣ 📜auth.route.js
+┃ ┃ ┃ ┗ 📜message.route.js
+┃ ┃ ┣ 📂seeds
+┃ ┃ ┃ ┗ 📜user.seed.js
+┃ ┃ ┗ 📜index.js
+┃ ┣ 📜.env
+┃ ┗ 📜package.json
+┣ 📂frontend
+┃ ┣ 📂dist
+┃ ┃ ┣ 📂assets
+┃ ┃ ┃ ┣ 📜index-BelhizQS.js
+┃ ┃ ┃ ┗ 📜index-BOA8yhP0.css
+┃ ┃ ┣ 📜avatar.png
+┃ ┃ ┣ 📜index.html
+┃ ┃ ┗ 📜vite.svg
+┃ ┣ 📂public
+┃ ┃ ┣ 📜avatar.png
+┃ ┃ ┗ 📜vite.svg
+┃ ┣ 📂src
+┃ ┃ ┣ 📂components
+┃ ┃ ┃ ┣ 📂skeletons
+┃ ┃ ┃ ┃ ┣ 📜MessageSkeleton.jsx
+┃ ┃ ┃ ┃ ┗ 📜SidebarSkeleton.jsx
+┃ ┃ ┃ ┣ 📜AuthImagePattern.jsx
+┃ ┃ ┃ ┣ 📜ChatContainer.jsx
+┃ ┃ ┃ ┣ 📜ChatHeader.jsx
+┃ ┃ ┃ ┣ 📜MessageInput.jsx
+┃ ┃ ┃ ┣ 📜Navbar.jsx
+┃ ┃ ┃ ┣ 📜NoChatSelected.jsx
+┃ ┃ ┃ ┗ 📜Sidebar.jsx
+┃ ┃ ┣ 📂constants
+┃ ┃ ┃ ┗ 📜index.js
+┃ ┃ ┣ 📂lib
+┃ ┃ ┃ ┣ 📜axios.js
+┃ ┃ ┃ ┗ 📜utils.js
+┃ ┃ ┣ 📂pages
+┃ ┃ ┃ ┣ 📜HomePage.jsx
+┃ ┃ ┃ ┣ 📜LoginPage.jsx
+┃ ┃ ┃ ┣ 📜ProfilePage.jsx
+┃ ┃ ┃ ┣ 📜SettingsPage.jsx
+┃ ┃ ┃ ┗ 📜SignUpPage.jsx
+┃ ┃ ┣ 📂store
+┃ ┃ ┃ ┣ 📜useAuthStore.js
+┃ ┃ ┃ ┣ 📜useChatStore.js
+┃ ┃ ┃ ┗ 📜useThemeStore.js
+┃ ┃ ┣ 📜App.jsx
+┃ ┃ ┣ 📜index.css
+┃ ┃ ┗ 📜main.jsx
+┃ ┣ 📜eslint.config.js
+┃ ┣ 📜index.html
+┃ ┣ 📜package.json
+┃ ┣ 📜postcss.config.js
+┃ ┣ 📜README.md
+┃ ┣ 📜tailwind.config.js
+┃ ┗ 📜vite.config.js
+┣ 📜.gitignore
+┣ 📜package.json
+┗ 📜readme.md
